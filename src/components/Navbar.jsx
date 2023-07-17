@@ -19,14 +19,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='text-white flex w-full fixed top-0 z-20 items-center bg-indigo-500'>
+    <nav className='text-white w-full fixed top-0 z-20 bg-indigo-500' >
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
               <Link to="/" className='flex items-center gap-2' 
                     onClick={()=>{setActive('');window.scrollTo(0,0)}}> 
                 <img src={logoUrl} alt="my logo" className='w-[100px] h-[80px] object-contain'/>
                 <p> Shen Haozhen</p>
               </Link>
-              <ul className="list-none hidden sm:flex flex-row gap-10">
+              <ul className="list-none sm:flex flex-row gap-10">
                   {objects.map((i,index) => {
                      if (i?.children) {
                       return (

@@ -1,32 +1,33 @@
 import Navbar from "./components/Navbar"
-import About from './components/About'
 import Model from './components/Model'
 import { BrowserRouter } from "react-router-dom"
 import imageUrl from './assets/herobg.png'
-import Left from "./components/Left"
 import Right from "./components/Right"
+import {createContext, useState, useRef} from "react"
+import LeftSteps from "./components/LeftSteps"
+
 
 const App = () => { 
-   
-  console.log(typeof imageUrl)
 
+ 
+  const activeContext = createContext(1);
+  const [active, setActive] = useState(1);
+   
   const hero = <div className="bg-bgimage bg-center bg-no-repeat bg-cover">
                  <Model/>
                </div>
 
-
-
   return (
     <BrowserRouter>
+      <activeContext.Provider value = {{active, setActive}}>
       <div className= 'relative w-full h-full z-0'>  
         <Navbar/>
-        <div className="flex flex-row justify-start translate-y-[80px]" >
-          <Left/>
-          <Right>
-
-          </Right>
+        <div className="h-screen flex flex-row justify-start items-center" >
+          <LeftSteps/>
+          <Right/>
         </div>
       </div>
+      </activeContext.Provider>
     </BrowserRouter>
   )
 }

@@ -1,0 +1,9 @@
+.cards::-webkit-scrollbar {
+   width: 8px;
+   height: 10px;
+
+}
+.cards::-webkit-scrollbar-thumb {
+    background-color: rgba(164, 203, 214, 0.985);
+    border-radius: 10px;
+ }

@@ -10,7 +10,6 @@ export default {
     extend: {
       backgroundImage: {
         'space' : "url(/space.jpg)",
-        'shihuai': "url(/ygo1109/sekai1.webp)",
         'bgimage': "url(/src/assets/herobg.png)",
       }
     },
