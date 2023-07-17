@@ -3,10 +3,11 @@ import { Tilt } from 'react-tilt'
 import { isTypedArray } from 'three/src/animation/AnimationUtils'
 import './style/about.css'
 import { motion} from 'framer-motion'
+import htmlurl from '../assets/tech/html.png'
 
 const cards = [
   {
-    url: '../assets/tech/html.png',
+    url: htmlurl,
     text: '对于html常见的标签都比较熟悉，没用过的标签很快也能掌握'
   },
   {
