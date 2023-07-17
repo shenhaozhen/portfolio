@@ -6,7 +6,7 @@ import { motion} from 'framer-motion'
 
 const cards = [
   {
-    url: '/src/assets/tech/html.png',
+    url: '../assets/tech/html.png',
     text: '对于html常见的标签都比较熟悉，没用过的标签很快也能掌握'
   },
   {
