@@ -3,43 +3,42 @@ import { Tilt } from 'react-tilt'
 import { isTypedArray } from 'three/src/animation/AnimationUtils'
 import './style/about.css'
 import { motion} from 'framer-motion'
-import htmlurl from '../assets/tech/html.png'
 
 const cards = [
   {
-    url: htmlurl,
+    url: './tech/html.png',
     text: '对于html常见的标签都比较熟悉，没用过的标签很快也能掌握'
   },
   {
-    url: '/src/assets/tech/css.png',
+    url: './/tech/css.png',
     text: '关于css，最基础的css本身，scss,tailwind都能熟练使用'
   },
   {
-    url: '/src/assets/tech/javascript.png',
+    url: './tech/javascript.png',
     text: 'js和es6及之后的新语法都很熟悉，毕竟js是根本'
   },
   {
-    url: '/src/assets/tech/typescript.png',
+    url: './tech/typescript.png',
     text: '主要是js用的多，ts有所了解还需精进'
   },
   {
-    url: '/src/assets/tech/reactjs.png',
+    url: './tech/reactjs.png',
     text: 'react是我最擅长也是最喜欢的框架,相关生态如redux,react router'
   },
   {
-    url: '/src/assets/tech/vue.png',
+    url: './tech/vue.png',
     text: '其实在vue2的时候不是很喜欢vue，因为比起选项式还是更喜欢组合式，vue3加入了组合式以后好多了感觉比react用的还舒服'
   },
   {
-    url: '/src/assets/tech/nodejs.png',
+    url: './tech/nodejs.png',
     text: 'node主要是用来写一些web后端的，对于node用的较多的也是和web有关的如http，socket之类的'
   },
   {
-    url: '/src/assets/tech/redux.png',
+    url: './tech/redux.png',
     text: 'redux和react redux都熟悉，不过以前用的多，现在zustand用的多，因为zustand比起redux轻量'
   },
   {
-    url: '/src/assets/tech/mongodb.png',
+    url: './tech/mongodb.png',
     text: 'mongodb用的比较多因为是json格式，sql数据库和语法有了解，日后会再精进'
   },
 
